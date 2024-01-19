@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button id="today-tab" onclick="showTab('today')">Today</button>
+        <button id="5day-tab" onclick="showTab('5day')">5-day forecast</button>
+    </div>
+
+    <h1>Weather App</h1>
+
+    <div id="search-container">
+        <label for="city">Enter city:</label>
+        <input type="text" id="city" placeholder="City name">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div id="weather-container">
+        <div id="today-content">
+            <div id="current-weather"></div>
+            <div id="hourly-weather"></div>
+            <div id="nearest-cities"></div>
+        </div>
+        
+        <div id="5day-content">
+            <div id="short-forecast-container">
+                <div class="day-forecast" onclick="showHourlyData(0)">
+                    <p id="day-of-week-0"></p>
+                    <p id="date-0"></p>
+                    <img id="icon-0" alt="Weather Icon">
+                    <p id="temperature-0"></p>
+                    <p id="description-0"></p>
+                </div>
+                <div class="day-forecast" onclick="showHourlyData(1)">
+                    <p id="day-of-week-1"></p>
+                    <p id="date-1"></p>
+                    <img id="icon-1" alt="Weather Icon">
+                    <p id="temperature-1"></p>
+                    <p id="description-1"></p>
+                </div>
+
+                <div class="day-forecast" onclick="showHourlyData(2)">
+                    <p id="day-of-week-2"></p>
+                    <p id="date-2"></p>
+                    <img id="icon-2" alt="Weather Icon">
+                    <p id="temperature-2"></p>
+                    <p id="description-2"></p>
+                </div>
+
+                <div class="day-forecast" onclick="showHourlyData(3)">
+                    <p id="day-of-week-3"></p>
+                    <p id="date-3"></p>
+                    <img id="icon-3" alt="Weather Icon">
+                    <p id="temperature-3"></p>
+                    <p id="description-3"></p>
+                </div>
+
+                <div class="day-forecast" onclick="showHourlyData(4)">
+                    <p id="day-of-week-4"></p>
+                    <p id="date-4"></p>
+                    <img id="icon-4" alt="Weather Icon">
+                    <p id="temperature-4"></p>
+                    <p id="description-4"></p>
+                </div>
+            </div>
+        
+            <div id="hourly-forecast-container">
+                <h2 id="hourly-forecast-title">Hourly Forecast</h2>
+                <div id="hourly-forecast"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

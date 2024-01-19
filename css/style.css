@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#weather-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: #4285f4;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #3c78d8;
+}
+
+.tabs button.active {
+    background-color: #3c78d8;
+}
+
+#search-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#current-weather, #hourly-weather, #nearest-cities {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hourly-item {
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.selected {
+    border: 2px solid #4285f4;
+    background-color: #e6f7ff;
+}
+
+.day-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+#short-forecast-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#hourly-forecast{
+    display: flex;
+    flex-direction: row;
+}
+
+.hourly-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
